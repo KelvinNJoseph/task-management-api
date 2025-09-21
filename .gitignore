@@ -56,3 +56,4 @@ Thumbs.db
 # Credentials (don’t commit sensitive configs!)
 application-*.yml
 src/main/resources/credentials.json
+
