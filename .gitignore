@@ -1,3 +1,6 @@
+# Local environment variables
+.env
+
 # Maven
 target/
 pom.xml.tag
@@ -52,10 +55,3 @@ Thumbs.db
 
 # Credentials (don’t commit sensitive configs!)
 application-*.yml
-application-*.properties
-
-# Ignore the main application.properties file
-src/main/resources/application.properties
-
-# Ignore any environment-specific configs
-src/main/resources/application-*.properties
