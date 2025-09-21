@@ -41,4 +41,7 @@ public class Task {
             inverseJoinColumns = @JoinColumn(name = "tag_id")
     )
     private Set<Tag> tags = new HashSet<>();
+
+    @Column(name = "google_event_id")
+    private String googleEventId;
 }
