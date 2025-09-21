@@ -19,4 +19,6 @@ public class TaskDto {
     private LocalDateTime dueDate;
     private String status;
     private Set<String> tags;
+    private String googleEventId;
+
 }

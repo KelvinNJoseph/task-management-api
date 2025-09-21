@@ -16,7 +16,8 @@ public class TaskMapper {
                 task.getDescription(),
                 task.getDueDate(),
                 task.getStatus().name(),
-                task.getTags().stream().map(Tag::getName).collect(Collectors.toSet())
+                task.getTags().stream().map(Tag::getName).collect(Collectors.toSet()),
+                task.getGoogleEventId()
         );
     }
 
@@ -27,6 +28,7 @@ public class TaskMapper {
         task.setDescription(dto.getDescription());
         task.setDueDate(dto.getDueDate());
         task.setStatus(Status.valueOf(dto.getStatus()));
+        task.setGoogleEventId(dto.getGoogleEventId());
         // Tags will be handled in service layer (to check if they exist or need to be created)
         return task;
     }
